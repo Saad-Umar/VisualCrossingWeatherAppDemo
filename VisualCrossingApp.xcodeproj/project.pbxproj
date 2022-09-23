@@ -11,6 +11,10 @@
 		0F26063528DD8233006014F7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F26063428DD8233006014F7 /* ContentView.swift */; };
 		0F26063728DD8236006014F7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0F26063628DD8236006014F7 /* Assets.xcassets */; };
 		0F26063A28DD8236006014F7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0F26063928DD8236006014F7 /* Preview Assets.xcassets */; };
+		0F26064328DD82A5006014F7 /* AppWebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F26064228DD82A5006014F7 /* AppWebService.swift */; };
+		0F26064528DD831A006014F7 /* WeatherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F26064428DD831A006014F7 /* WeatherService.swift */; };
+		0F26064728DD834A006014F7 /* TeamViewBaseWebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F26064628DD834A006014F7 /* TeamViewBaseWebService.swift */; };
+		0F26064928DD8404006014F7 /* WeatherDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F26064828DD8404006014F7 /* WeatherDataModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +23,10 @@
 		0F26063428DD8233006014F7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		0F26063628DD8236006014F7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0F26063928DD8236006014F7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		0F26064228DD82A5006014F7 /* AppWebService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppWebService.swift; sourceTree = "<group>"; };
+		0F26064428DD831A006014F7 /* WeatherService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherService.swift; sourceTree = "<group>"; };
+		0F26064628DD834A006014F7 /* TeamViewBaseWebService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeamViewBaseWebService.swift; sourceTree = "<group>"; };
+		0F26064828DD8404006014F7 /* WeatherDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDataModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +61,10 @@
 			children = (
 				0F26063228DD8233006014F7 /* VisualCrossingAppApp.swift */,
 				0F26063428DD8233006014F7 /* ContentView.swift */,
+				0F26064228DD82A5006014F7 /* AppWebService.swift */,
+				0F26064628DD834A006014F7 /* TeamViewBaseWebService.swift */,
+				0F26064428DD831A006014F7 /* WeatherService.swift */,
+				0F26064828DD8404006014F7 /* WeatherDataModel.swift */,
 				0F26063628DD8236006014F7 /* Assets.xcassets */,
 				0F26063828DD8236006014F7 /* Preview Content */,
 			);
@@ -137,8 +149,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F26064328DD82A5006014F7 /* AppWebService.swift in Sources */,
 				0F26063528DD8233006014F7 /* ContentView.swift in Sources */,
+				0F26064928DD8404006014F7 /* WeatherDataModel.swift in Sources */,
+				0F26064528DD831A006014F7 /* WeatherService.swift in Sources */,
 				0F26063328DD8233006014F7 /* VisualCrossingAppApp.swift in Sources */,
+				0F26064728DD834A006014F7 /* TeamViewBaseWebService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
