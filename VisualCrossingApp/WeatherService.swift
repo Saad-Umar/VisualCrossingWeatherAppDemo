@@ -10,9 +10,9 @@ import UIKit
 
 class WeatherService: AppBaseWebService {
     
-    func getWeatherData() async throws -> WeatherDataBaseModel {
+    func getWeatherData(url:String) async throws -> WeatherDataBaseModel {
         
-        let weatherJsonURL = "https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/copenhagen%2C%20denmark/2022-08-23/2022-09-23?unitGroup=metric&key=MTVZWQUFG9FB5XS6P8KNJ2NHC&contentType=json"
+        let weatherJsonURL = url
         
         
         do {

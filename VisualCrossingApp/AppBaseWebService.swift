@@ -26,7 +26,7 @@ extension AppBaseWebService : AppWebServiceDelegate {
         if let version = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String {
             header["x-appversion"] = version
         }
-        header["authorization"] = UserDefaults.standard.object(forKey: "TIXSEE_USER_JWT2") as? String ?? ""
+        header["authorization"] = UserDefaults.standard.object(forKey: "APP_USER_JWT") as? String ?? ""
 
        return header
     }
