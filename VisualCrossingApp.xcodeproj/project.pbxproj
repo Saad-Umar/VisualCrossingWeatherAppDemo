@@ -15,6 +15,8 @@
 		0F26064528DD831A006014F7 /* WeatherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F26064428DD831A006014F7 /* WeatherService.swift */; };
 		0F26064728DD834A006014F7 /* TeamViewBaseWebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F26064628DD834A006014F7 /* TeamViewBaseWebService.swift */; };
 		0F26064928DD8404006014F7 /* WeatherDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F26064828DD8404006014F7 /* WeatherDataModel.swift */; };
+		0F26064B28DD88D5006014F7 /* WeatherDataViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F26064A28DD88D5006014F7 /* WeatherDataViewModel.swift */; };
+		0F26064D28DD88F0006014F7 /* AppBaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F26064C28DD88F0006014F7 /* AppBaseViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +29,8 @@
 		0F26064428DD831A006014F7 /* WeatherService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherService.swift; sourceTree = "<group>"; };
 		0F26064628DD834A006014F7 /* TeamViewBaseWebService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeamViewBaseWebService.swift; sourceTree = "<group>"; };
 		0F26064828DD8404006014F7 /* WeatherDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDataModel.swift; sourceTree = "<group>"; };
+		0F26064A28DD88D5006014F7 /* WeatherDataViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDataViewModel.swift; sourceTree = "<group>"; };
+		0F26064C28DD88F0006014F7 /* AppBaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppBaseViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +65,8 @@
 			children = (
 				0F26063228DD8233006014F7 /* VisualCrossingAppApp.swift */,
 				0F26063428DD8233006014F7 /* ContentView.swift */,
+				0F26064A28DD88D5006014F7 /* WeatherDataViewModel.swift */,
+				0F26064C28DD88F0006014F7 /* AppBaseViewModel.swift */,
 				0F26064228DD82A5006014F7 /* AppWebService.swift */,
 				0F26064628DD834A006014F7 /* TeamViewBaseWebService.swift */,
 				0F26064428DD831A006014F7 /* WeatherService.swift */,
@@ -150,11 +156,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				0F26064328DD82A5006014F7 /* AppWebService.swift in Sources */,
+				0F26064D28DD88F0006014F7 /* AppBaseViewModel.swift in Sources */,
 				0F26063528DD8233006014F7 /* ContentView.swift in Sources */,
 				0F26064928DD8404006014F7 /* WeatherDataModel.swift in Sources */,
 				0F26064528DD831A006014F7 /* WeatherService.swift in Sources */,
 				0F26063328DD8233006014F7 /* VisualCrossingAppApp.swift in Sources */,
 				0F26064728DD834A006014F7 /* TeamViewBaseWebService.swift in Sources */,
+				0F26064B28DD88D5006014F7 /* WeatherDataViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

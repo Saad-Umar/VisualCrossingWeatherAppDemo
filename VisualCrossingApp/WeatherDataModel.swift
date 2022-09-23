@@ -11,23 +11,26 @@ import Foundation
 struct WeatherDataBaseModel: Codable, Identifiable {
     
     var id = UUID()
-    let success: Bool
-    let message: String
-    let data: WeatherDataModel
+    let days: [WeatherDataModel]
     
     enum CodingKeys: String, CodingKey {
-        case success
-        case message
-        case data
+        case days
     }
 }
 
 struct WeatherDataModel: Codable, Identifiable {
     var id = UUID()
-    var temp: String
-    
+    let datetime: String
+    let datetimeEpoch: Int
+    let temp, feelslike, humidity, dew: Double
+    let precip: Double
+    let precipprob: Double?
+    let snow, snowdepth: Int
+    let preciptype: [String]?
+    let windgust: Double?
+    let windspeed, winddir, pressure, visibility: Double
+
     enum CodingKeys: String, CodingKey {
-        case temp
+        case datetime, datetimeEpoch, temp, feelslike, humidity, dew, precip, precipprob, snow, snowdepth, preciptype, windgust, windspeed, winddir, pressure, visibility
     }
 }
-
