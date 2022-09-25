@@ -56,7 +56,7 @@ struct ContentView: View {
                     }
                     Section(header: Text("lodz")) {
                         ForEach(range) { day in
-                            let avgsAndMeds = viewModel.publishedWeatherDaysData?["copenhagem"]
+                            let avgsAndMeds = viewModel.publishedWeatherDaysData?["lodz"]
                             HStack{
                                 VStack {
                                     Text("wind_avg")
@@ -80,7 +80,7 @@ struct ContentView: View {
                     }
                     Section(header: Text("brussels")) {
                         ForEach(range) { day in
-                            let avgsAndMeds = viewModel.publishedWeatherDaysData?["copenhagem"]
+                            let avgsAndMeds = viewModel.publishedWeatherDaysData?["brussels"]
                             HStack{
                                 VStack {
                                     Text("wind_avg")
@@ -104,7 +104,7 @@ struct ContentView: View {
                     }
                     Section(header: Text("islamabad")) {
                         ForEach(range) { day in
-                            let avgsAndMeds = viewModel.publishedWeatherDaysData?["copenhagem"]
+                            let avgsAndMeds = viewModel.publishedWeatherDaysData?["islamabad"]
                             HStack{
                                 VStack {
                                     Text("wind_avg")
