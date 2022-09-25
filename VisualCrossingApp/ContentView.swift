@@ -15,15 +15,37 @@ struct ContentView: View {
         SwiftUI.Color.blue
             .ignoresSafeArea()
             .overlay(
-
-                List{
-                    Text("Hello, world!")
-                        .padding()
+                
+                List {
+                    Section(header: Text("copenhagem")) {
+                        ForEach(viewModel.publishedWeatherDaysData?["copenhagem"]?.days ?? []) { day in
+                            Text("\(day.temp)")
+                                .padding()
+                        }
+                    }
+                    Section(header: Text("lodz")) {
+                        ForEach(viewModel.publishedWeatherDaysData?["lodz"]?.days ?? []) { day in
+                            Text("\(day.temp)")
+                                .padding()
+                        }
+                    }
+                    Section(header: Text("brussels")) {
+                        ForEach(viewModel.publishedWeatherDaysData?["brussels"]?.days ?? []) { day in
+                            Text("\(day.temp)")
+                                .padding()
+                        }
+                    }
+                    Section(header: Text("islamabad")) {
+                        ForEach(viewModel.publishedWeatherDaysData?["islamabad"]?.days ?? []) { day in
+                            Text("\(day.temp)")
+                                .padding()
+                        }
+                    }
                     
                 }
                     .onAppear(perform:  viewModel.retrieveWeatherJsonFromServer)
-                .frame(width: .infinity, height: .infinity)
-                .listStyle(.plain)
+                    .frame(width: .infinity, height: .infinity)
+                    .listStyle(.plain)
                 
                 //.listRowSeparatorTint(.white) //For iOS 15 or higher only)
             )
