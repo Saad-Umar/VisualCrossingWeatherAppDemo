@@ -139,7 +139,6 @@ struct ContentView: View {
                     .frame(width: .infinity, height: .infinity)
                     .listStyle(.plain)
                 
-                //.listRowSeparatorTint(.white) //For iOS 15 or higher only)
             )
         
     }
@@ -152,20 +151,5 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
-    }
-}
-
-extension Binding {
-    
-    /// When the `Binding`'s `wrappedValue` changes, the given closure is executed.
-    /// - Parameter closure: Chunk of code to execute whenever the value changes.
-    /// - Returns: New `Binding`.
-    func onUpdate(_ closure: @escaping () -> Void) -> Binding<Value> {
-        Binding(get: {
-            wrappedValue
-        }, set: { newValue in
-            wrappedValue = newValue
-            closure()
-        })
     }
 }
